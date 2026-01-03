@@ -1,9 +1,7 @@
-# osm2pgsql Lua definitions for LuaLS
+# osm2pgsql flex config Lua definitions for LuaLS
 
-Lua type definitions for [osm2pgsql](https://osm2pgsql.org) designed for the
-[Lua Language Server](https://luals.github.io). This provides completion,
-hover docs, and diagnostics for the `osm2pgsql` Lua API when writing style
-scripts.
+Lua type definitions for [osm2pgsql](https://osm2pgsql.org) flex config designed for the [Lua Language Server](https://luals.github.io).
+This provides completion, hover docs, and diagnostics for the `osm2pgsql` Lua API when writing style scripts.
 
 ## What's included
 
