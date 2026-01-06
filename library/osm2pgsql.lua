@@ -131,7 +131,7 @@ function osm_geometry:transform(target_srid) end
 ---@field table? string The database table for the output. Optional.
 
 ---@class Index
----@field column? string The name of the column the index should be created on. Can also be an array of names. Required, unless `expression` is set.
+---@field column? string | string[] The name of the column the index should be created on. Can also be an array of names. Required, unless `expression` is set.
 ---@field name? string Optional name of this index. (Default: Let PostgreSQL choose the name.)
 ---@field expression? string A valid SQL expression used for indexes on expressions. Can not be used together with `column`.
 ---@field include? string | string[] A column name or list of column names to include in the index as non-key columns. (Only available from PostgreSQL 11.)
