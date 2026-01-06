@@ -163,7 +163,7 @@ function osm_geometry:transform(target_srid) end
 ---@class OsmObject
 ---@field id integer
 ---@field type 'node' | 'way' | 'relation'
----@field tags table<string, string | nil>
+---@field tags table<string, string>
 ---@field version? integer
 ---@field timestamp? number
 ---@field changeset? integer
