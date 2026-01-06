@@ -157,7 +157,7 @@ function osm_geometry:transform(target_srid) end
 
 ---@class OsmMember
 ---@field type 'n' | 'w' | 'r'
----@field ref string member ID
+---@field ref integer member ID
 ---@field role string
 
 ---@class OsmObject
@@ -418,5 +418,5 @@ osm2pgsql.process_gen = nil
 ---This function is called for every added, modified, or deleted relation.
 ---Its only job is to return the ids of all member ways of the specified relation we want to see in stage 2 again.
 ---It MUST NOT store any information about the relation!
----@type fun(relation: OsmObject): {ways: number[], nodes: number[]}
+---@type fun(relation: OsmObject): { ways?: number[], nodes?: number[] } | nil
 osm2pgsql.select_relation_members = nil
